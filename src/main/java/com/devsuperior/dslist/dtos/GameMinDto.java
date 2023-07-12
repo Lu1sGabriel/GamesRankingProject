@@ -2,7 +2,9 @@ package com.devsuperior.dslist.dtos;
 
 
 import com.devsuperior.dslist.models.GameModel;
+import lombok.Data;
 
+@Data
 public class GameMinDto {
     private Long id;
     private String title;
@@ -20,4 +22,6 @@ public class GameMinDto {
         imgUrl = entity.getImgUrl();
         short_description = entity.getShort_description();
     }
+
+
 }
