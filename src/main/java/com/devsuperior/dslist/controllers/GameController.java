@@ -19,6 +19,7 @@ public class GameController {
 
     @GetMapping
     public ResponseEntity<List<GameMinDto>> findAll() {
+
         return ResponseEntity.ok(gameService.findAll());
     }
 
