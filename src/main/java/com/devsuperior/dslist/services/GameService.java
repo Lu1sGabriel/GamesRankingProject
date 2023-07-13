@@ -1,21 +1,44 @@
 package com.devsuperior.dslist.services;
 
+import com.devsuperior.dslist.dtos.GameDto;
 import com.devsuperior.dslist.dtos.GameMinDto;
+import com.devsuperior.dslist.exceptions.ErrorDto;
 import com.devsuperior.dslist.models.GameModel;
 import com.devsuperior.dslist.repositories.GameRepository;
+
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
+import java.util.Optional;
 
 @Service
 public class GameService {
     @Autowired
     private GameRepository gameRepository;
 
+    @Transactional(readOnly = true)
     public List<GameMinDto> findAll() {
         List<GameModel> result = gameRepository.findAll();
         return result.stream().map(GameMinDto::new).toList();
 
     }
+
+    @Transactional(readOnly = true)
+    public ResponseEntity<?> findGameById(Long id) {
+        Optional<GameModel> optionalGame = gameRepository.findById(id);
+        if (optionalGame.isPresent()) {
+            GameModel result = optionalGame.get();
+            GameDto gameDto = new GameDto(result);
+            return ResponseEntity.ok(gameDto);
+        } else {
+            var errorDto = new ErrorDto("Jogo não encontrado com o ID: " + id);
+            return ResponseEntity.status(HttpStatus.NOT_FOUND).body(errorDto);
+        }
+    }
+
+
 }
