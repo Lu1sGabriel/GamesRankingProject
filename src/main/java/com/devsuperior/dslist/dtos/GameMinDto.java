@@ -2,6 +2,7 @@ package com.devsuperior.dslist.dtos;
 
 import com.devsuperior.dslist.models.GameModel;
 import com.devsuperior.dslist.projections.GameMinProjection;
+
 import lombok.Getter;
 
 @Getter
@@ -23,7 +24,7 @@ public class GameMinDto {
         short_description = entity.getShort_description();
     }
 
-    public GameMinDto(GameMinProjection projection){
+    public GameMinDto(GameMinProjection projection) {
         id = projection.getId();
         title = projection.getTitle();
         year = projection.getYear();

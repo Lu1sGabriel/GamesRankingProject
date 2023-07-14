@@ -1,9 +1,11 @@
 package com.devsuperior.dslist.dtos;
 
 import com.devsuperior.dslist.models.GameModel;
+
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+
 import org.springframework.beans.BeanUtils;
 
 @Getter

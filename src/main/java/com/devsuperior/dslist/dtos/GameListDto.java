@@ -1,6 +1,7 @@
 package com.devsuperior.dslist.dtos;
 
 import com.devsuperior.dslist.models.GameList;
+
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 
