@@ -3,7 +3,7 @@
 <p>O projeto é uma aplicação voltada para jogos, com o objetivo de gerenciar listas de jogos em diferentes categorias ou
     coleções. Através da aplicação, os usuários podem criar, visualizar e organizar suas listas personalizadas de jogos,
     além de obter informações detalhadas sobre cada jogo.</p>
-<h2>SUMÁRIO</h2>
+<h2>Sumário 📚</h2>
 <ol>
     <li><a href="#funcionalidades">Funcionalidades</a></li>
     <li><a href="#tecnologias-utilizadas">Tecnologias Utilizadas</a></li>
@@ -16,13 +16,13 @@
     <li><a href="#autor">Autor</a></li>
     <li><a href="#contatos">Contatos</a></li>
 </ol>
-<h2 id="funcionalidades">Funcionalidades</h2>
+<h2 id="funcionalidades">Funcionalidades 🎯</h2>
 <p>Listar todas as listas de jogos cadastradas.</p>
 <p>Listar todos os jogos cadastrados.</p>
 <p>Buscar informações detalhadas de um jogo pelo ID.</p>
 <p>Buscar os jogos de uma lista específica.</p>
 <p>Mover um jogo dentro de uma lista.</p>
-<h2 id="tecnologias-utilizadas">Tecnologias Utilizadas</h2>
+<h2 id="tecnologias-utilizadas">Tecnologias Utilizadas 💻</h2>
 <p>
     - Java<br>
     - Spring Framework<br>
@@ -32,7 +32,7 @@
     - PostgreSQL<br>
     - RESTful API
 </p>
-<h2 id="configurações do CORS">Configurações</h2>
+<h2 id="configurações do CORS">Configurações do CORS 🔒</h2>
 <p>Configuração do CORS para permitir acesso a partir de diferentes origens.</p>
 <h2 id="como-executar">Como Executar</h2>
 <p>
@@ -41,7 +41,7 @@
     - Certifique-se de ter as tecnologias, JDK 17 ou superior e ter todas as dependências necessárias configuradas.<br>
     - Execute a aplicação através do main da classe principal.
 </p>
-<h2 id="classes-javas">Classes Javas</h2>
+<h2 id="classes-javas">Classes Javas 🍵</h2>
 <details>
     <summary>Config</summary>
     <ul>
@@ -187,7 +187,7 @@
     </ul>
 </details>
 
-<h2 id="endpoints">Endpoints</h2>
+<h2 id="endpoints">Endpoints 🛣️</h2>
 
 
 ```http
@@ -206,13 +206,13 @@ GET /lists/2/games
 POST /lists/2/replacement
 ```
 
-<h2 id="pré-requisitos">Pré-Requisitos</h2>
+<h2 id="pré-requisitos">Pré-Requisitos 📋</h2>
 <p>
     Para executar o projeto, certifique-se de ter o JDK 17 ou uma versão superior instalada na sua máquina. Além disso,
     é necessário ter o banco de dados PostgreSQL instalado, configurado e em execução. Adicionalmente, você precisará de
     um software como Insomnia ou Postman para realizar as requisições HTTP.
 </p>
-<h2 id="como-executar">Como executar</h2>
+<h2 id="como-executar">Como Executar ▶️</h2>
 
 <ol>
     <li>Certifique-se de ter um banco de dados PostgreSQL configurado e em execução.</li>
@@ -231,8 +231,8 @@ POST /lists/2/replacement
     Ao seguir esses passos, você estará pronto para explorar e utilizar o projeto com sucesso. Caso surjam dúvidas ou
     problemas, verifique os logs de execução e as configurações para identificar possíveis causas e soluções.
     Mantenha-se atento à documentação e boa exploração!
-<h2 id="autor">Autor</h2>
+<h2 id="autor">Autor 👤</h2>
 <p>Luis Gabriel Goés De Santana</p>
-<h2 id="contatos">Contato</h2>
+<h2 id="contatos">Contatos 📧</h2>
 <p>luis.santana.profissional@gmail.com</p>
 <p>https://www.linkedin.com/in/luisgabrielsantana/</p>
